@@ -1,0 +1,39 @@
+{% extends "basePage.html" %}
+
+{% load static %}
+
+{% block title %}Funcionamiento{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/page/documentacion.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="titlepage">
+    <h1 id="tituloDocumentacion">Funcionamiento del Proyecto</h1>
+    <div class="texto">
+        <p id="p1">Aquí se muestra el funcionamiento del brazo robótico.</p>
+    </div>
+</div>
+
+<div class="single-column-container">
+    <div class="documentation-card">
+        <div class="glasses_box">
+            <figure class="video-container">
+                <iframe src="https://drive.google.com/file/d/147hK-8u0G1-z9jQZ_6aogLQ3BdN4Jfb-/preview" allow="autoplay"></iframe>
+            </figure>
+            <h3><span class="blu">-</span>Funcionamiento del Brazo Robótico 1</h3>
+        </div>
+    </div>
+    <div class="documentation-card">
+        <div class="glasses_box">
+            <figure class="video-container">
+                <iframe src="https://drive.google.com/file/d/1Dkajbhot2xR25mzid7SmvgagVDVJlSGO/preview" allow="autoplay"></iframe>
+            </figure>
+            <h3><span class="blu">-</span>Funcionamiento del Brazo Robótico 2</h3>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
